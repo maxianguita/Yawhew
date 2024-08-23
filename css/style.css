@@ -398,11 +398,15 @@ h1, h2, h3, h4, h5, h6, p {
   cursor: pointer;
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input:checked ~ .black {
-  box-shadow: 0 0 0 31.25rem #0d0d0d;
+  box-shadow: 0 0 0 31.25rem #01746b;
   transform: rotate(-225deg);
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input:checked ~ .red {
-  box-shadow: 0 0 0 31.25rem #770000;
+  box-shadow: 0 0 0 31.25rem #01746b;
+  transform: rotate(225deg);
+}
+.main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input:checked ~ .red {
+  box-shadow: 0 0 0 31.25rem #cc6a08;
   transform: rotate(225deg);
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .cambio {
@@ -449,8 +453,8 @@ h1, h2, h3, h4, h5, h6, p {
   color: #ffffff;
   line-height: 1.65;
 }
-/* .main .certificados {
-  padding: 3rem 0;
+ .main .certificados {
+  padding: 4rem 0;
   margin-bottom: 2rem;
   justify-content: center;
 }
@@ -477,12 +481,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 .main .certificados .contenedor-certificados img:hover {
   transform: scale(1.1);
-} */
+} 
 
 .certi1 {
     width: 100%;
     padding: 2rem 0;
-    background-color: #f9f9f9; /* Fondo opcional para la sección de certificados */
+    background-color: #f9f9f9; 
 }
 
 .certificados {
@@ -494,29 +498,29 @@ h1, h2, h3, h4, h5, h6, p {
 .certificados .titulo {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #333; /* Color del título */
+    color: #ffffff; /* Color del título */
 }
 
 .contenedor-certificados {
     display: flex;
-    flex-wrap: wrap; /* Permite que los certificados se ajusten en varias filas si es necesario */
+    flex-wrap: wrap; 
     justify-content: center;
-    gap: 1.5rem; /* Espacio entre cada certificado */
+    gap: 1.5rem; 
 }
 
 .contenedor-certificados a {
-    flex: 1 1 calc(33.33% - 1.5rem); /* Cada certificado ocupa un tercio del ancho, ajustando el espacio */
+    flex: 1 1 calc(33.33% - 1.5rem); 
     max-width: calc(33.33% - 1.5rem);
     text-align: center;
-    background-color: #fff; /* Fondo blanco para cada certificado */
+    background-color: #fff; 
     padding: 0.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para dar profundidad */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease;
 }
 
 .contenedor-certificados a:hover {
-    transform: scale(1.05); /* Escala el certificado al pasar el mouse por encima */
+    transform: scale(1.05); 
 }
 
 .contenedor-certificados img {
@@ -527,14 +531,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 @media (max-width: 768px) {
     .contenedor-certificados a {
-        flex: 1 1 calc(50% - 1rem); /* Ajusta a dos columnas en pantallas más pequeñas */
+        flex: 1 1 calc(50% - 1rem); 
         max-width: calc(50% - 1rem);
     }
 }
 
 @media (max-width: 480px) {
     .contenedor-certificados a {
-        flex: 1 1 100%; /* Un certificado por fila en pantallas muy pequeñas */
+        flex: 1 1 100%; 
         max-width: 100%;
     }
 }
@@ -550,9 +554,10 @@ h1, h2, h3, h4, h5, h6, p {
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .img img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
-  object-position: center; /* Centra la imagen dentro del contenedor */
+  object-fit: cover; 
+  object-position: center; 
 }
+
 
 /** Media Queries **/
 .footer {
@@ -688,4 +693,4 @@ h1, h2, h3, h4, h5, h6, p {
   filter: grayscale(100);
 }
 
-/*# sourceMappingURL=style.css.map */
+
