@@ -692,5 +692,25 @@ h1, h2, h3, h4, h5, h6, p {
 .main .proyectos .contenedor-proyectos .proyecto .foto a img:hover {
   filter: grayscale(100);
 }
+.header .contenedor-header .nombre {
+  font-size: 8vw; /* Tamaño de fuente basado en el ancho de la pantalla */
+  letter-spacing: 0.8vw; /* Espaciado de letras basado en el ancho de la pantalla */
+}
+
+/* Ajustes para pantallas más grandes */
+@media (min-width: 768px) {
+  .header .contenedor-header .nombre {
+      font-size: 5vw;
+      letter-spacing: 0.5vw;
+  }
+}
+
+/* Ajustes para pantallas muy grandes */
+@media (min-width: 1200px) {
+  .header .contenedor-header .nombre {
+      font-size: 4rem; /* Tamaño de fuente fijo para pantallas grandes */
+      letter-spacing: 0.4rem;
+  }
+}
 
 
