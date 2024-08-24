@@ -48,3 +48,7 @@ $('document').ready(function(){
       }
     });
 });
+document.querySelector('.main .sobre-mi .contenedor-sobre-mi .texto').addEventListener('click', function() {
+  this.classList.toggle('expand');
+  this.querySelector('::after').textContent = this.classList.contains('expand') ? 'Ver menos' : 'Ver más';
+});

@@ -261,11 +261,39 @@ h1, h2, h3, h4, h5, h6, p {
   background: #101010;
   color: red;
   font-family: monospace, Arial;
-  width: 70%;
-  min-height: 27.5rem;
+  width: 90%;
+  min-height: 15rem;
   margin: 0 auto;
   border-radius: 0.625rem;
+  overflow: hidden;
+  position: relative;
+  max-height: 10rem; /* Limita la altura para que parte del texto quede oculto */
+  transition: max-height 0.5s ease; /* Transición suave al expandir */
 }
+
+.main .sobre-mi .contenedor-sobre-mi .texto.expand {
+  max-height: 50rem; /* Expande para mostrar más texto */
+}
+
+.main .sobre-mi .contenedor-sobre-mi .texto .ver-mas {
+  display: block;
+  text-align: right;
+  color: white;
+  background: #101010;
+  padding: 0.5rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .main .sobre-mi .contenedor-sobre-mi .texto {
+    font-size: 0.9rem;
+    max-height: 8rem; /* Aún menos texto visible en móviles */
+  }
+}
+
 .main .sobre-mi .contenedor-sobre-mi .texto #pow-txt {
   display: none;
   color: #e3e3e3;
