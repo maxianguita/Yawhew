@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: "Oswald", sans-serif;
-  background: url("../img/programing.jpeg") no-repeat center center fixed;
+  background: url("../img/FONDOLANDINGPAGE.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
 }
@@ -47,13 +47,37 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .titulo {
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 4rem;
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
-  color: #fff; /* Color del texto en blanco */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+  color: #000000; /* Color del texto en blanco */
+  text-shadow: 2px 2px 4px rgba(96, 96, 96, 0.5); /* Sombra de texto */
 }
+.titulo-blanco {
+  color: white;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(96, 96, 96, 0.5); /* Sombra de texto */
+}
+
+.titulo-principal {
+  color: #ffffff; /* Color blanco */
+  font-size: 3rem; /* Tamaño de la fuente */
+  text-align: center; /* Centrar el texto */
+  margin-top: 2rem; /* Espacio superior */
+  margin-bottom: 2rem; /* Espacio inferior */
+  font-weight: bold; /* Texto en negrita */
+  letter-spacing: 0.1rem; /* Espaciado entre letras */
+  text-transform: uppercase; /* Convertir el texto a mayúsculas */
+  padding: 1rem; /* Espaciado interno */
+  border-radius: 0.5rem; /* Bordes redondeados */
+  text-shadow: 2px 2px 4px rgba(96, 96, 96, 0.5); /* Sombra de texto */
+}
+
 
 .boton-arriba {
   padding: 1rem;
@@ -93,6 +117,7 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 35.375rem;
     font-size: 2.5rem;
     letter-spacing: 0.5rem;
+    
   }
 }
 .main .proyectos .contenedor-proyectos .proyecto .foto a img {
@@ -105,9 +130,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 .menu {
   padding: 0.5rem;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.155);
   border-top: 0.1rem solid rgba(86, 86, 86, 0.5);
-  border-bottom: 0.1rem solid rgba(86, 86, 86, 0.5);
+  border-bottom: 0.1rem solid rgba(86, 86, 86, 0.016);
   position: sticky;
   z-index: 11;
   top: 0;
@@ -176,50 +201,58 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
-
 .header {
-  height: 20rem;
-  width: 100%;
-}
-
-.header .contenedor-header {
-  height: 100%;
+  min-height: 100vh; /* Ocupa al menos toda la altura de la ventana */
+  padding: 60px 20px 40px 20px; /* Espaciado superior más grande */
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Alinea los elementos al inicio verticalmente */
+  justify-content: center; /* Centra el contenido horizontalmente */
 }
 
-.header .contenedor-header .nombre {
-  font-size: 3.8rem;
-  letter-spacing: 0.2rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #ff1616; /* Cambia el color del texto */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Añade sombra al texto */
-  padding: 1.5rem; /* Espacio alrededor del texto */
-  border-radius: 5px; /* Bordes redondeados */
-  
-}
-.header .contenedor-header .nombre .letter:nth-child(1) {
-  color: #ff1616; /* Rojo */
+.contenedor-header {
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  width: 100%; /* Ancho completo */
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  text-align: center; /* Centra el texto */
+  margin-top: 60px; /* Agrega un margen superior para bajar el contenido */
 }
 
-.header .contenedor-header .nombre .letter:nth-child(2) {
-  color: #ffb400; /* Amarillo */
+.header-content {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos en columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre la imagen y el texto */
 }
 
-.header .contenedor-header .nombre .letter:nth-child(3) {
-  color: #00ff00; /* Verde */
+.nombre {
+  display: flex;
+  justify-content: center; /* Centra la imagen dentro de su contenedor */
+  width: 100%; /* Ocupa todo el ancho del contenedor */
 }
 
-.header .contenedor-header .nombre .letter:nth-child(4) {
-  color: #00bfff; /* Azul */
+.letter {
+  max-width: 500px; /* Ajusta este valor para agrandar la imagen */
+  width: 100%; /* La imagen se ajusta al ancho disponible */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: 40px;
 }
 
-.header .contenedor-header .nombre .letter:nth-child(5) {
-  color: #8a2be2; /* Violeta */
+
+.text-content {
+  padding-top: 20px; /* Espacio superior entre la imagen y el texto */
 }
+
+.profesion {
+  color: white; /* Color del texto */
+  font-size: 1.5rem; /* Tamaño del texto */
+  margin: 0; /* Elimina el margen predeterminado */
+  padding: 0 10px; /* Espaciado lateral */
+}
+
+
+
 
 .header .contenedor-header .nombre .fade-in {
   animation: fadeIn 3s;
@@ -238,10 +271,12 @@ h1, h2, h3, h4, h5, h6, p {
 .header .contenedor-header h2 {
   width: 14.75rem;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: monospace;
   letter-spacing: 0.1rem;
-  font-size: 1.2rem;
+  font-size: medium;
+  margin-top: 80px; /* Agrega espacio superior para separar el texto de la imagen */
 }
+
 .header .contenedor-header blockquote {
   line-height: 1.5;
   font-style: italic;
@@ -471,7 +506,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input:checked ~ .detalles {
   opacity: 1;
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .detalles h3 {
   margin-bottom: 0.3125rem;
