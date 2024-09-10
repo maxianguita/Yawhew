@@ -25,7 +25,7 @@ html {
 
 body {
   font-family: "Oswald", sans-serif;
-  background: url("../img/FONDOLANDINGPAGE.jpg") no-repeat center center fixed;
+  background: url("../img/fondoblack.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #ffffff;
 }
@@ -240,6 +240,8 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
+
+
 .text-content {
   padding-top: 20px; /* Espacio superior entre la imagen y el texto */
 }
@@ -251,6 +253,23 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0 10px; /* Espaciado lateral */
 }
 
+.titulo {
+  font-size: 2em;
+  color: rgb(0, 0, 0);
+  animation: fadeInOut 4s ease-in-out infinite;
+ font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-15px); /* Aparece desde arriba */
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0); /* Posición final */
+  }
+}
 
 
 
